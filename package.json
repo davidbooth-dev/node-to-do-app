@@ -1,0 +1,31 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "My First Node js app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodenv ./src/index.js --exec nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.1"
+  },
+  "devDependencies": {
+    "node-env-run": "^3.0.2"
+  },
+  "keywords": [
+    "Test",
+    "Node"
+  ],
+  "author": "David Booth",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidbooth-dev/node-to-do-app"
+  }
+}

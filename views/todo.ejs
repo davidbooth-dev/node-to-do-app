@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="David Booth" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+	<link rel="stylesheet" href="/assets/style.css" type="text/css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/assets/todo-list.js"></script>
+
+	<title>Todo List</title>
+</head>
+
+<body>
+  <h1>My To Do List</h1>
+	<div id="todo-table">
+    <form>
+      <input type="text" name="item" placeholder="Add New Item" required />
+      <button type="submit">Add item</button>
+    </form>
+    <% if(todos.length === 0){ %>
+    <p>No Todos Found</p>
+    <% } %>
+    <ul>
+      <% for(let i=0; i<todos.length; i++){ %>
+      <li><%= todos[i].item %></li>
+      <% } %>
+    </ul>
+  </div>
+</body>
+</html>
