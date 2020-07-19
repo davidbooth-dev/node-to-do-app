@@ -1,2 +1,2 @@
-# node-to-do-app
-Basic Node App
+# Basic Node App - Todo
+
